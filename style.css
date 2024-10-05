@@ -1,0 +1,71 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation menu styling */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Blue gradient */
+    padding: 15px;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+/* Menu items */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for menu items */
+nav ul li a:hover {
+    color: #FFD700; /* Golden color on hover */
+    transform: scale(1.1); /* Slightly larger on hover */
+}
+
+/* Change menu background on scroll */
+nav.scrolled {
+    background: linear-gradient(90deg, #2a5298, #4c7db3); /* Darker gradient on scroll */
+}
+
+/* Section styling to create a scrollable page */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: #333;
+}
+
+#home { background-color: #A3C1DA; }
+#about { background-color: #F2D7D5; }
+#services { background-color: #D5F5E3; }
+#portfolio { background-color: #EAD1DC; }
+#contact { background-color: #D7BDE2; }
